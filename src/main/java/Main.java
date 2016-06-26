@@ -28,7 +28,7 @@ public class Main {
         System.out.println("wait time nano : " +waitTime);
 
         Double nThreads = nCpu * uCpu * (1+ waitTime/cpuTime);
-        System.out.println("cpu * utilize cpu ratio * (1 + waitTime/ delta time nano) : ");
+        System.out.println("number optimal threads: cpu * utilize cpu ratio * (1 + waitTime/ delta time nano) : ");
         System.out.println(nThreads);
     }
 
