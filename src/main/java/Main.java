@@ -1,10 +1,3 @@
-import java.math.BigDecimal;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import static java.lang.Thread.sleep;
-import static java.lang.management.ManagementFactory.getThreadMXBean;
-
 /**
  * Created by shadr on 26/06/2016.
  */
@@ -21,7 +14,7 @@ public class Main {
         long  cpuTime = System.nanoTime();
         System.out.println("current time nano : " +cpuTime);
         Thread.sleep(400);
-        cpuTime = System.nanoTime() - cpuTime;
+        cpuTime = System.nanoTime()- cpuTime;
         System.out.println("delta time nano : " +cpuTime);
 
         long waitTime = (400 * 1000000) - cpuTime;
